@@ -1,7 +1,7 @@
 import React from 'react'
 import './bids.css'
 import { AiFillHeart,AiOutlineHeart } from "react-icons/ai";
-import bids1 from '../../assets/bids1.png'
+import slot from '../../assets/slot.png'
 import bids2 from '../../assets/bids2.png'
 import bids3 from '../../assets/bids3.png'
 import bids4 from '../../assets/bids4.png'
@@ -22,9 +22,9 @@ const Bids = ({title}) => {
           <div className="card-column" >
             <div className="bids-card">
               <div className="bids-card-top">
-                <img src={bids1} alt="" />
+                <img src={slot} alt="" />
               <Link to={`/post/123`}>
-              <p className="bids-title">Abstact Smoke Red</p>
+              <p className="bids-title">Slots</p>
               </Link>
               </div>
               <div className="bids-card-bottom">

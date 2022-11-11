@@ -7,7 +7,7 @@ import {  Link } from "react-router-dom";
 const Menu = () => (
   <>
      <Link to="/"><p>Explore</p> </Link>
-     <p>My Items</p>
+     <p>My Games</p>
     
   </>
  )
@@ -29,11 +29,11 @@ const Menu = () => (
         <div className="navbar-links_logo">
           <img src={logo} alt="logo" />
           <Link to="/"> 
-            <h1>CryptoKet</h1>
+            <h1>Empyrean</h1>
           </Link>
         </div>
         <div className="navbar-links_container">
-          <input type="text" placeholder='Search Item Here' autoFocus={true} />
+          <input type="text" placeholder='Search Games Here' autoFocus={true} />
          <Menu />
          {user && <Link to="/"><p onClick={handleLogout}>Logout</p></Link> }
         

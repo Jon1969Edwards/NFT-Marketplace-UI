@@ -13,7 +13,7 @@ import verify from '../../assets/verify.png'
 import coin from '../../assets/coin.png'
 import { Link  } from 'react-router-dom';
 const Header = () => {
-  var settings = {
+  const settings = {
     dots: false,
     infinite: false,
     speed: 500,
@@ -74,12 +74,12 @@ const Header = () => {
     <div className='header section__padding'>
       <div className="header-content">
         <div>
-          <h1>Discover, collect, and sell extraordinary NFTs</h1>
+          <h1>Win, Win, Win!!!</h1>
           <img className='shake-vertical' src={coin} alt="" />
         </div>
       </div>
       <div className="header-slider">
-        <h1>Top Sellers</h1>
+        <h1>Top Winners!</h1>
        <Slider {...settings} className='slider'>
             <div className='slider-card'>
               <p className='slider-card-number'>1</p>
