@@ -1,4 +1,5 @@
 import './create.css'
+import React from 'react';
 import Image from '../../assets/Image.png'
 const Create = () => {
 
