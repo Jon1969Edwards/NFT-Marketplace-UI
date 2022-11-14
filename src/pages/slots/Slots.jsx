@@ -202,19 +202,24 @@ const Slots = ({id, owned, close, expires}) => {
                     }
      }
 
-     function win() {
-      if (ring1 <= 50 && ring2 <= 50 && ring3 <= 50 && ring1 != undefined) {
-          setPrice(1)
-      } else if (ring1 > 50 && ring1 <= 75 && ring2 > 50 && ring2 <= 75 && ring3 > 50 && ring3 <= 75 && ring1 != undefined) {
-          setPrice(2)
-      } else if (ring1 > 75 && ring1 <= 95 && ring2 > 75 && ring2 <= 95 && ring3 > 75 && ring3 <= 95 && ring1 != undefined) {
-          setPrice(3)
-      } else if (ring1 > 95 && ring1 <= 100 && ring2 > 95 && ring2 <= 100 && ring3 > 95 && ring3 <= 100 && ring1 != undefined) {
-          setPrice(4)
-      } else {
-          setPrice(0)
-      } 
-  }
+    function win() {
+        if (ring1 <= 50 && ring2 <= 50 && ring3 <= 50 && ring1 != undefined) {
+            setPrice(1)
+            setBalance(balance + (balance * 15))
+        } else if (ring1 > 50 && ring1 <= 75 && ring2 > 50 && ring2 <= 75 && ring3 > 50 && ring3 <= 75 && ring1 != undefined) {
+            setPrice(2)
+            setBalance(balance + (balance * 20))
+        } else if (ring1 > 75 && ring1 <= 95 && ring2 > 75 && ring2 <= 95 && ring3 > 75 && ring3 <= 95 && ring1 != undefined) {
+            setPrice(3)
+            setBalance(balance + (balance * 25))
+        } else if (ring1 > 95 && ring1 <= 100 && ring2 > 95 && ring2 <= 100 && ring3 > 95 && ring3 <= 100 && ring1 != undefined) {
+            setPrice(4)
+            setBalance(balance + jackpot)
+            setJackpot(0)
+        } else {
+            setPrice(0)
+        } 
+    }
 
  function rand() {
       setRing1(Math.floor(Math.random() * (100 - 1) + 1))
@@ -224,43 +229,24 @@ const Slots = ({id, owned, close, expires}) => {
 
 function play() {
     if (ring3 > 1 || !spin){
-    if (input <= balance && input >= 1){
-    setRealBet(input)
-    setSpin(true)
-    setRing1()
-    setRing2()
-    setRing3()
-    setBalance(balance - input)
-    setJackpot(jackpot + (input / 2))
-    setTimeout(function(){
-   rand()
-    }, 2000)
-} else {
-    setPrice(10)
+        if (input <= balance && input >= 1){
+        setRealBet(input)
+        setSpin(true)
+        setRing1()
+        setRing2()
+        setRing3()
+        setBalance(balance - input)
+        setJackpot(jackpot + (input / 2))
+        setTimeout(function(){
+        rand()
+            }, 2000)
+        } else {
+            setPrice(10)
+        }
+
+    }
 }
 
-}
-}
-
-
-function win() {
-    if (ring1 <= 50 && ring2 <= 50 && ring3 <= 50 && ring1 != undefined) {
-        setPrice(1)
-        setBalance(balance + (balance * 15))
-    } else if (ring1 > 50 && ring1 <= 75 && ring2 > 50 && ring2 <= 75 && ring3 > 50 && ring3 <= 75 && ring1 != undefined) {
-        setPrice(2)
-        setBalance(balance + (balance * 20))
-    } else if (ring1 > 75 && ring1 <= 95 && ring2 > 75 && ring2 <= 95 && ring3 > 75 && ring3 <= 95 && ring1 != undefined) {
-        setPrice(3)
-        setBalance(balance + (balance * 25))
-    } else if (ring1 > 95 && ring1 <= 100 && ring2 > 95 && ring2 <= 100 && ring3 > 95 && ring3 <= 100 && ring1 != undefined) {
-        setPrice(4)
-        setBalance(balance + jackpot)
-        setJackpot(0)
-    } else {
-        setPrice(0)
-    } 
-}
 
 function premio() {
     if (price === 1 && ring3 > 1) {
