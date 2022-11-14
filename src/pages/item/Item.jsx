@@ -1,5 +1,6 @@
 import React from 'react';
 import './item.css'
+import { Link } from 'react-router-dom';
 import creator from '../../assets/seller2.png'
 import item from '../../assets/slot.png'
 
@@ -28,8 +29,10 @@ const Item = () => {
               <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book</p>
             </div>
             <div className="item-content-buy">
-              <button className="primary-btn">Play For 4.5 ETH</button>
-              <button className="secondary-btn">Another Button</button>
+              <Link to="/slots">
+                <button className="primary-btn">Play For 4.5 ETH</button>
+                <button className="secondary-btn">Another Button</button>
+              </Link>
             </div>
           </div>
       </div>

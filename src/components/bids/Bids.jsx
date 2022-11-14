@@ -23,7 +23,7 @@ const Bids = ({title}) => {
             <div className="bids-card">
               <div className="bids-card-top">
                 <img src={slot} alt="" />
-              <Link to={`/post/123`}>
+              <Link to={`/slots/Slots.jsx`}>
               <p className="bids-title">Slots</p>
               </Link>
               </div>
