@@ -33,7 +33,7 @@ const Slots = ({id, owned, close, expires}) => {
         <div className="ringEnd">🥭</div>
         </>
             )
-    } else if (spin && ring1 == undefined) {
+    } else if (spin && ring1 === undefined) {
     return (
         <>
         <div className="ringMoving">🍓</div>
@@ -92,7 +92,7 @@ const Slots = ({id, owned, close, expires}) => {
         <div className="ringEnd">🍊</div>
         </>
             )
-    } else if (spin && ring2 == undefined) {
+    } else if (spin && ring2 === undefined) {
     return (
         <>
         <div className="ringMoving">🍓</div>
@@ -152,7 +152,7 @@ const Slots = ({id, owned, close, expires}) => {
         <div className="ringEnd">🍊</div>
         </>
             )
-    } else if (spin && ring3 == undefined) {
+    } else if (spin && ring3 === undefined) {
     return (
         <>
         <div className="ringMoving">🍓</div>
@@ -203,16 +203,16 @@ const Slots = ({id, owned, close, expires}) => {
      }
 
     function win() {
-        if (ring1 <= 50 && ring2 <= 50 && ring3 <= 50 && ring1 != undefined) {
+        if (ring1 <= 50 && ring2 <= 50 && ring3 <= 50 && ring1 !== undefined) {
             setPrice(1)
             setBalance(balance + (balance * 15))
-        } else if (ring1 > 50 && ring1 <= 75 && ring2 > 50 && ring2 <= 75 && ring3 > 50 && ring3 <= 75 && ring1 != undefined) {
+        } else if (ring1 > 50 && ring1 <= 75 && ring2 > 50 && ring2 <= 75 && ring3 > 50 && ring3 <= 75 && ring1 !== undefined) {
             setPrice(2)
             setBalance(balance + (balance * 20))
-        } else if (ring1 > 75 && ring1 <= 95 && ring2 > 75 && ring2 <= 95 && ring3 > 75 && ring3 <= 95 && ring1 != undefined) {
+        } else if (ring1 > 75 && ring1 <= 95 && ring2 > 75 && ring2 <= 95 && ring3 > 75 && ring3 <= 95 && ring1 !== undefined) {
             setPrice(3)
             setBalance(balance + (balance * 25))
-        } else if (ring1 > 95 && ring1 <= 100 && ring2 > 95 && ring2 <= 100 && ring3 > 95 && ring3 <= 100 && ring1 != undefined) {
+        } else if (ring1 > 95 && ring1 <= 100 && ring2 > 95 && ring2 <= 100 && ring3 > 95 && ring3 <= 100 && ring1 !== undefined) {
             setPrice(4)
             setBalance(balance + jackpot)
             setJackpot(0)
