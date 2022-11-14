@@ -19,6 +19,7 @@ const Slots = ({id, owned, close, expires}) => {
 
     useEffect(() => {
         win()
+        // eslint-disable-next-line
     }, [ring3])
 
 
@@ -242,6 +243,7 @@ function play() {
     }
 }
 
+// eslint-disable-next-line
 function win() {
     if (ring1 <= 50 && ring2 <= 50 && ring3 <= 50 && ring1 !== undefined) {
         setPrice(1)
