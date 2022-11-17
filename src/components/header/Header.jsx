@@ -3,7 +3,6 @@ import './header.css'
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
 import coin from '../../assets/coin.png'
-import { Link  } from 'react-router-dom';
 const Header = () => {
   
   return (
