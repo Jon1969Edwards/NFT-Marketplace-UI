@@ -21,7 +21,7 @@ $ git clone https://github.com/Jon1969Edwards/Slotty.git
 # install dependencies
 $ npm install
 
-# serve with host at localhost:8000
+# serve with host at localhost:1969
 $ npm start
 ```
 
