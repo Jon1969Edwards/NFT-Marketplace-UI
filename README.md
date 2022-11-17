@@ -1,5 +1,5 @@
 <div align="center">
-      <h1> <img src="https://www.thewindowsclub.com/wp-content/uploads/2021/03/Etherium.png" width="500px"><br/>Slotty the Slot Machine</h1>
+      <h1> <img src="http://empyrean.world/assets/img/logo/logo.svg" width="500px"><br/>Slotty the Slot Machine</h1>
      </div>
 
 # Description
