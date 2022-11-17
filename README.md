@@ -1,22 +1,22 @@
 <div align="center">
-      <h1> <img src="https://www.thewindowsclub.com/wp-content/uploads/2021/03/Etherium.png" width="500px"><br/>NFT Marketplace</h1>
+      <h1> <img src="https://www.thewindowsclub.com/wp-content/uploads/2021/03/Etherium.png" width="500px"><br/>Slotty the Slot Machine</h1>
      </div>
 
 # Description
-NFT Marketplace template for creation, sale, and purchase of digital art as NFTs.
+Slot Machine UI template for Empyrean.
 
 
 # Tech Used
  ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white) ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white) ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E) ![React Router](https://img.shields.io/badge/React_Router-CA4245?style=for-the-badge&logo=react-router&logoColor=white) ![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
       
 ## Live Preview
-[Demo](https://nft-marketplace-ui.netlify.app/)
+[Demo](https://unrivaled-kitten-dd924f.netlify.app/)
 
 ## Build Setup
 
 ``` bash
 # clone project
-$ git clone https://github.com/kasim393/NFT-Marketplace.git
+$ git clone https://github.com/Jon1969Edwards/Slotty.git
 
 # install dependencies
 $ npm install
@@ -26,9 +26,7 @@ $ npm start
 ```
 
 # Screenshot
-!["React Movie App"](https://raw.githubusercontent.com/kasim393/NFT-Marketplace/main/src/assets/ss1.png)
-
-!["React Movie App"](https://raw.githubusercontent.com/kasim393/NFT-Marketplace/main/src/assets/ss4.png)
+!["React Movie App"](https://raw.githubusercontent.com/Jon1969Edwards/Slotty/main/src/assets/ss1.png)
 
 # Resource
 
@@ -40,12 +38,12 @@ $ npm start
     
 
 ### Task
-- [x] Home page
-- [x] Detail page
-- [x] Login page
-- [x] Register page
-- [x] Create item page
-- [x] Profile page
+- [ ] Home page
+- [ ] Detail page
+- [ ] Login page
+- [ ] Register page
+- [ ] Create item page
+- [ ] Profile page
 - [ ] Payment
 
  
