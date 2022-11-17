@@ -2,16 +2,16 @@ import React from 'react';
 import './item.css'
 import { Link } from 'react-router-dom';
 import creator from '../../assets/seller2.png'
-import item from '../../assets/slot.png'
+import slotInfo from '../../assets/slot.png'
 
-const Item = () => {
+const SlotInfo = () => {
 
 
 
   return( 
       <div className='item section__padding'>
         <div className="item-image">
-          <img src={item} alt="item" />
+          <img src={slotInfo} alt="item" />
         </div>
           <div className="item-content">
             <div className="item-content-title">
@@ -22,14 +22,14 @@ const Item = () => {
               <div><p>Creater</p></div>
               <div>
                 <img src={creator} alt="creator" />
-                <p>Rian Leon </p>
+                <p>Jon Edwards</p>
               </div>
             </div>
             <div className="item-content-detail">
               <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book</p>
             </div>
             <div className="item-content-buy">
-              <Link to={`/slots/Slots.jsx`}>
+              <Link to={`/slotsInfo`}>
                 <button className="primary-btn">Play For 4.5 ETH</button>
               </Link>
               <Link>
@@ -41,4 +41,4 @@ const Item = () => {
   )
 };
 
-export default Item;
+export default SlotInfo;
