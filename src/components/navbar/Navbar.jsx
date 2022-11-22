@@ -19,9 +19,7 @@ const Menu = () => (
   const handleLogout = () => {
     setUser(false);
   }
-  const handleLogin = () => {
-    setUser(true);
-  }
+  
 
   return (
     <div className='navbar'>
@@ -49,10 +47,10 @@ const Menu = () => (
       ): (
         <>
         <Link to="/login"> 
-         <button type='button' className='primary-btn' onClick={handleLogin} >Sign In</button>
+         {/* <button type='button' className='primary-btn' onClick={handleLogin} >Sign In</button> */}
         </Link>
         <Link to="/register"> 
-          <button type='button' className='secondary-btn'>Sign Up</button>
+          {/* <button type='button' className='secondary-btn'>Sign Up</button> */}
         </Link>
         </>
       )}
@@ -80,10 +78,10 @@ const Menu = () => (
             ): (
               <>
               <Link to="/login"> 
-              <button type='button' className='primary-btn' onClick={handleLogin} >Sign In</button>
+              {/* <button type='button' className='primary-btn' onClick={handleLogin} >Sign In</button> */}
               </Link>
               <Link to="/register"> 
-                <button type='button' className='secondary-btn'>Sign Up</button>
+                {/* <button type='button' className='secondary-btn'>Sign Up</button> */}
               </Link>
               </>
             )}

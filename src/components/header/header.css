@@ -1,3 +1,5 @@
+@import url(https://fonts.googleapis.com/css?family=Playfair+Display:400italic,700italic,900italic);
+
 :root {
   --btn-duration-slow: 2s;
   --btn-duration-normal: 3s;
@@ -22,7 +24,8 @@
   align-items: center;
   justify-content: center;
   margin-bottom: 60px;
-  font-family: monospace;
+  font-family: 'Playfair Display', serif;
+	font-style: italic;
 }
 .neon-title .text {
   position: relative;
@@ -66,7 +69,8 @@
   font-size: 30px;
   text-transform: uppercase;
   letter-spacing: 4px;
-  font-family: monospace;
+  font-family: 'Playfair Display', serif;
+	font-style: italic;
 }
 .neon-block .block:after {
   content: '';
@@ -326,7 +330,8 @@
   position: relative;
   padding: 100px 20px;
   color: #f2f2f2;
-  font-family: monospace;
+  font-family: 'Playfair Display', serif;
+	font-style: italic;
   line-height: 1.5;
   background: linear-gradient(90deg, #010d31 0%, #010d31 50%, #010615 50%);
 }
@@ -637,6 +642,12 @@ border-radius: 50%;
   
 }
 @media screen and (max-width: 550px) {
+  .neon-block .block {
+    max-width: 750px;
+    min-width: 340px;
+    max-height: 55px;
+    margin: 0%;
+  }
   .slick-prev, .slick-next{
     display: none !important;
   }
