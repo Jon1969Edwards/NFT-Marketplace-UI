@@ -24,7 +24,7 @@
   align-items: center;
   justify-content: center;
   margin-bottom: 60px;
-  font-family: 'Playfair Display', serif;
+  font-family: 'Blair', sans-serif;
 	font-style: italic;
 }
 .neon-title .text {
@@ -66,10 +66,10 @@
   height: 150px;
   background: linear-gradient(45deg, #272325 40%, #ad1b1b);
   color: #fff;
-  font-size: 30px;
+  font-size: 53px;
   text-transform: uppercase;
   letter-spacing: 4px;
-  font-family: 'Playfair Display', serif;
+  font-family: 'Blair', sans-serif;
 	font-style: italic;
 }
 .neon-block .block:after {
@@ -330,7 +330,7 @@
   position: relative;
   padding: 100px 20px;
   color: #f2f2f2;
-  font-family: 'Playfair Display', serif;
+  font-family: 'Blair', sans-serif;
 	font-style: italic;
   line-height: 1.5;
   background: linear-gradient(90deg, #010d31 0%, #010d31 50%, #010615 50%);

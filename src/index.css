@@ -1,7 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap'); */
+@import url('//db.onlinewebfonts.com/c/e65785a402c71d61f8bbd751362d04ac?family=ITC+Blair:wght@200;300;400;500;600;700&display=swap');
 
 :root {
-  --font-family: 'Poppins', sans-serif;
+  --font-family: 'Blair', sans-serif;
 
   --gradient2: linear-gradient(89.97deg, #EB1484 1.84%, #c81cc5 102.67%);
   --primary-btn: linear-gradient(101.12deg, #3c4ed6 27.35%, #8628b2 99.99%, #1c5bc8 100%, #C81CC5 100%);

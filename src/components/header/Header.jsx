@@ -7,6 +7,7 @@ const Header = () => {
   
   return (
     <div className='header section__padding'>
+      <div className='inner-img'>
       <div className='header-container'>
         <section className='neon-block'>
           <div className='block'>
@@ -14,6 +15,7 @@ const Header = () => {
             Win! Win! Win!
           </div>
         </section>
+      </div>
       </div>
       {/* <div className="header-content">
         <div>

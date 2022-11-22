@@ -1,9 +1,9 @@
 import React from 'react'
 import './bids.css'
 import { AiFillHeart } from "react-icons/ai";
-import slot from '../../assets/slot.png'
-import bids2 from '../../assets/bids2.png'
-import bids3 from '../../assets/bids3.png'
+import slot1 from '../../assets/slot.png'
+import slot2 from '../../assets/slotUI2.jpg'
+import slot3 from '../../assets/slotUI3.png'
 import bids4 from '../../assets/bids4.png'
 import bids5 from '../../assets/bids5.png'
 import bids6 from '../../assets/bids6.png'
@@ -87,7 +87,7 @@ const Bids = ({title}) => {
           <div className="card-column" >
             <div className="bids-card">
               <div className="bids-card-top">
-                <img src={slot} alt="" />
+                <img src={slot1} alt="" />
               <Link to={`/slots/Slots.jsx`}>
               <p className="bids-title">Slots</p>
               </Link>
@@ -101,9 +101,9 @@ const Bids = ({title}) => {
           <div className="card-column" >
             <div className="bids-card">
               <div className="bids-card-top">
-                <img src={bids2} alt="" />
+                <img src={slot2} alt="" />
               <Link to={`/slotsInfo/Slots2.jsx`}>
-              <p className="bids-title">Mountain Landscape</p>
+              <p className="bids-title">Shuffle Cross</p>
               </Link>
               </div>
               <div className="bids-card-bottom">
@@ -115,9 +115,9 @@ const Bids = ({title}) => {
           <div className="card-column" >
             <div className="bids-card">
               <div className="bids-card-top">
-                <img src={bids3} alt="" />
+                <img src={slot3} alt="" />
               <Link to={`/post/456`}>
-              <p className="bids-title">Paint Color on Wall</p>
+              <p className="bids-title">Roulette</p>
               </Link>
               </div>
               <div className="bids-card-bottom">
